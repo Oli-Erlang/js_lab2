@@ -4,18 +4,16 @@
 		<meta charset="utf-8">
 	</head>
 	<body>
-	
+		<p id="p1">Последний месяц зимы...</p>
+		<button onclick=myFunction()">Что делать?</button>
+	        <p id="p2"></p> 			     
 		<script>
-		
-		var text = new Object();
-		 text.first = "Последний месяц зимы...";
-		 <button onClick="f1()">Выбрать</button>??
-		 text.second = "Порадуйся снегу.";
-		 
-		document.write(text.first + "<br>");
-		document.write(<button onClick="f1()">Выбрать</button> + "<br>");
-//alert("Приветствую Тебя, мой юный друг!!!")
-		  document.write(text.second);
+			function myFunction()
+			  {
+			  	alert("Приветствую Тебя, мой юный друг!!! ");
+				var paragraph2 = "Приветствую Тебя, мой юный друг!!! <br>Радуйся снегу =)";
+				document.getElementById("p2").innerHTML = paragraph2;
+			  }
 		</script>
 	</body>
 </html>

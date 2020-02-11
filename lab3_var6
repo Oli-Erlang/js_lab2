@@ -6,7 +6,7 @@
     <body>
         <script> 
            var number = prompt('Введите число', "Введите сюда любое число...");
-           if (number % 1 == 0){
+           if (Integer.parseInt(number).toString() == number){
               alert('Число является целым.');
            }
            esle alert('Число, которое вы ввели, не является целым.');

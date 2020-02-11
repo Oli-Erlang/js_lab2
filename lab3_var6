@@ -10,8 +10,7 @@
         if (Math.ceil(number) - number > 0) {
             alert(" не целое число");
         } 
-        
-        if (isNaN(n)){
+        if (isNaN(number)){
           alert("Вы ввели неправильные данные");
         }
         else  { alert(" целое число");

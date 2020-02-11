@@ -5,12 +5,15 @@
     </head>
     <body>
         <script> 
- 
-
-        var number = prompt('Введите число', "Введите сюда любое число...");
+        
+        var number = prompt('Введите число', "Введите сюда любое число ...");
         if (Math.ceil(number) - number > 0) {
-        alert(" не целое число");
+            alert(" не целое число");
         } 
+        
+        if (isNaN(n)){
+          alert("Вы ввели неправильные данные");
+        }
         else  { alert(" целое число");
         }
         </script>

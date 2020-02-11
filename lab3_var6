@@ -5,11 +5,14 @@
     </head>
     <body>
         <script> 
-           var number = prompt('Введите число', "Введите сюда любое число...");
-           if (Integer.parseInt(number).toString() == number){
-              alert('Число является целым.');
-           }
-           esle alert('Число, которое вы ввели, не является целым.');
+ 
+
+        var number = prompt('Введите число', "Введите сюда любое число...");
+        if (Math.ceil(number) - number > 0) {
+        alert(" не целое число");
+        } 
+        else  { alert(" целое число");
+        }
         </script>
     </body>
 </html>

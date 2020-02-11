@@ -15,7 +15,13 @@
             var age = prompt('Сколько Вам лет, если не секрет?', "35 лет");
             if (age == "35 лет"){
                 alert("Хорошо, пусть это останется Вашим секретом.");
-                
+                  var restart = confirm("Начать заново?");
+                  if(restart){
+                      location.reload();
+                  }
+                 if (!restart){
+                    exit;
+                 }
             }
             else age = Number(age) +10; 
                alert('Через 10 лет Вам исполнится ' + age + 'лет.');
@@ -27,7 +33,6 @@
            if (!restart){
               exit;
            }
-          
         </script>
     </body>
 </html>
